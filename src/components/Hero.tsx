@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                                 as="a"
                                 variant="primary"
                                 size="lg"
-                                href="/cv.pdf"
+                                href="/QuinterosTomas.pdf"
                                 download="CV-Tomas-Quinteros-EN.pdf"
                                 className="me-3"
                             >
