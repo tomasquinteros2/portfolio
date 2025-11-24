@@ -40,7 +40,7 @@ const projectData: Project[] = [
     title: 'Página de Juegos',
     description: 'Una colección de mini-juegos interactivos desarrollados con JavaScript puro, HTML y CSS, enfocados en la manipulación del DOM y la lógica de juego del lado del cliente.',
     imageUrl: rattata,
-    projectUrl: 'https://interfaces-one.vercel.app/',
+    projectUrl: 'https://interfaces-one.vercel.app/html/game.html',
     repoUrl: 'https://github.com/tomasquinteros2/interfaces/tree/main/tp3',
     technologies: ['HTML', 'CSS', 'JavaScript']
   },
