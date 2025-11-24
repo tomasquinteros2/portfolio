@@ -1,0 +1,39 @@
+.hero-section {
+    background: #f8f9fa; /* Un fondo ligeramente grisáceo */
+    min-height: 100vh;
+    padding: 60px 0;
+    color: #343a40;
+}
+
+.hero-profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    color: var(--bs-primary); /* Usa el color primario de Bootstrap */
+    font-weight: 500;
+    height: 40px; /* Altura fija para evitar que el layout salte */
+}
+
+.hero-email-link {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.hero-email-link:hover {
+    color: var(--bs-primary);
+}
+
+.social-btn {
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #343a40;
+    color: white;
+}

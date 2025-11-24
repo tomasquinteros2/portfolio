@@ -1,0 +1,42 @@
+/* src/style/About.css */
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-category-title {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--bs-primary);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Estilos para los badges */
+.skill-badge {
+    font-size: 0.9rem;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    /* Sobrescribimos los colores de bg="light" */
+    background-color: #e9ecef;
+    color: #343a40 !important; /* <--- AQUÍ ESTÁ EL CAMBIO */
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+}
+
+.skill-badge:hover {
+    background-color: #dee2e6;
+    transform: translateY(-2px);
+}

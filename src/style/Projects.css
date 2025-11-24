@@ -1,0 +1,25 @@
+.project-card {
+    border: none; /* Quitamos el borde por defecto de las tarjetas */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Efecto sutil de elevación */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important; /* Sombra más pronunciada */
+}
+
+.project-card-img {
+    height: 250px; /* O el valor que te parezca mejor */
+    object-fit: cover;
+}
+
+.project-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.project-description {
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio sobrante */
+    font-size: 0.95rem;
+    color: #666;
+}

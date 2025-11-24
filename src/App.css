@@ -1,0 +1,11 @@
+/* Estilos personalizados */
+
+/* Ajuste para la barra de navegación fija */
+body {
+  padding-top: 56px;
+  width: 100%;/* Altura de la navbar por defecto de Bootstrap */
+}
+
+section {
+  padding: 60px 0;
+}
