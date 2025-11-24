@@ -74,6 +74,7 @@ const Projects: React.FC = () => {
                         {/* Contenedor para alinear los botones al final */}
                         <div className="mt-auto">
                           <Button
+                              as="a"
                               variant="dark"
                               href={project.projectUrl}
                               target="_blank"

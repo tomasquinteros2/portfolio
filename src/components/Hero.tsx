@@ -47,6 +47,7 @@ const Hero: React.FC = () => {
                         {/* 4. Botones de acción y links sociales */}
                         <div className="mt-4">
                             <Button
+                                as="a"
                                 variant="primary"
                                 size="lg"
                                 href="/cv.pdf"
