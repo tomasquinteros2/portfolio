@@ -6,7 +6,6 @@ import diagrama from '../assets/DiagramaServicios.jpg';
 import monopatines from '../assets/monopatines-electricos.jpg';
 import rattata from '../assets/rattata.png';
 
-// La interfaz y los datos no necesitan cambios
 interface Project {
   title: string;
   description: string;
@@ -20,8 +19,8 @@ interface Project {
 const projectData: Project[] = [
   {
     title: 'Ecopila Stock DataBase',
-    description: 'Sistema full-stack con arquitectura Offline-First. Sincroniza una base de datos local con una en la nube, garantizando la continuidad del negocio ante caídas de internet.' +
-        'Cuenta ADMIN: USER: admindev, PASS: 123456',
+    description: 'Full-stack system with Offline-First architecture. Synchronizes a local database with the cloud, ensuring business continuity during internet outages.' +
+        ' ADMIN Account: USER: admindev, PASS: 123456',
     imageUrl: diagrama,
     projectUrl: 'http://212.47.70.237/',
     repoUrl: 'https://github.com/tomasquinteros2/ProyectoBaseOffline-First/tree/main/frontend',
@@ -29,16 +28,16 @@ const projectData: Project[] = [
     technologies: ['JavaSpring', 'Node.js', 'TypeScript', 'PostgreSQL', 'JWT', 'Docker']
   },
   {
-    title: 'Sistema de Monopatines',
-    description: 'Sistema backend con arquitectura de microservicios. Gestiona el alta, mantenimiento y facturación de viajes de una red de monopatines, incluyendo pausas tarifadas.',
+    title: 'Electric Scooter System',
+    description: 'Backend system with microservices architecture. Manages registration, maintenance, and billing for a scooter network, including paid pauses.',
     imageUrl: monopatines,
     projectUrl: '/TPE-ArqWeb-2024.pdf',
     repoUrl: 'https://github.com/tomasquinteros2/Arquitecturas-WEB-Servicio-Monopatines',
     technologies: ['JavaSpring', 'Maven', 'JWT', 'Docker', 'MySQl']
   },
   {
-    title: 'Página de Juegos',
-    description: 'Una colección de mini-juegos interactivos desarrollados con JavaScript puro, HTML y CSS, enfocados en la manipulación del DOM y la lógica de juego del lado del cliente.',
+    title: 'Mini-Games Collection',
+    description: 'A collection of interactive mini-games developed with vanilla JavaScript, HTML, and CSS, focused on DOM manipulation and client-side game logic.',
     imageUrl: rattata,
     projectUrl: 'https://interfaces-one.vercel.app/html/game.html',
     repoUrl: 'https://github.com/tomasquinteros2/interfaces/tree/main/tp3',
@@ -81,7 +80,7 @@ const Projects: React.FC = () => {
                               download={project.projectUrl.endsWith('.pdf')}
                               className="me-2 mb-2"
                           >
-                            {project.title === 'Sistema de Monopatines' ? 'View Assignment' : 'View Demo'}
+                            {project.title === 'Electric Scooter System' ? 'View Assignment' : 'View Demo'}
                           </Button>
 
                           {project.repoUrlBackend ? (
