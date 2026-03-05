@@ -1,0 +1,93 @@
+/* Header / Navbar */
+
+.portfolio-navbar {
+    background: rgba(15, 15, 26, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s ease;
+    padding: 1rem 0;
+}
+
+.portfolio-navbar.scrolled {
+    background: rgba(15, 15, 26, 0.95);
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.6rem 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand-custom {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text) !important;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.brand-bracket {
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.navbar-brand-custom:hover .brand-bracket {
+    color: var(--color-secondary);
+}
+
+.nav-link-custom {
+    color: var(--color-text-muted) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: var(--color-text) !important;
+}
+
+.nav-link-custom:hover::after {
+    width: 70%;
+}
+
+.nav-link-cv {
+    color: var(--color-primary) !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem !important;
+    margin-left: 0.5rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.nav-link-cv:hover {
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+    box-shadow: 0 0 15px rgba(108, 99, 255, 0.4);
+}
+
+.navbar-toggle-custom {
+    border-color: var(--color-border) !important;
+    background-color: transparent;
+}
+
+.navbar-toggle-custom .navbar-toggler-icon {
+    filter: invert(1);
+}
+
