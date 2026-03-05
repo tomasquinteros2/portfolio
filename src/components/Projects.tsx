@@ -5,6 +5,7 @@ import '../style/Projects.css';
 import diagrama from '../assets/DiagramaServicios.jpg';
 import monopatines from '../assets/monopatines-electricos.jpg';
 import rattata from '../assets/rattata.png';
+import vitalifit from '../assets/vitalifit.png';
 
 interface Project {
   title: string;
@@ -36,8 +37,16 @@ const projectData: Project[] = [
     technologies: ['JavaSpring', 'Maven', 'JWT', 'Docker', 'MySQl']
   },
   {
+    title: 'VitalifitSupps',
+    description: 'Online sports supplements store built with Next.js 14, TypeScript, Tailwind CSS and Firebase. Features an admin panel to manage products and promotions in real time.',
+    imageUrl: vitalifit,
+    projectUrl: 'https://www.vitalifitsupps.com.ar/',
+    repoUrl: 'https://github.com/tomasquinteros2/vitalifit',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Firebase', 'Lucide React']
+  },
+  {
     title: 'Mini-Games Collection',
-    description: 'A collection of interactive mini-games developed with vanilla JavaScript, HTML, and CSS, focused on DOM manipulation and client-side game logic.',
+    description: 'A collection of interactive mini-games, including a Connect Four game, built entirely by hand using vanilla JavaScript and CSS — no AI involved. Features custom animations and game logic developed from scratch through pure DOM manipulation',
     imageUrl: rattata,
     projectUrl: 'https://interfaces-one.vercel.app/html/game.html',
     repoUrl: 'https://github.com/tomasquinteros2/interfaces/tree/main/tp3',
