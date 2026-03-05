@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+# Mi Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el código fuente de mi portafolio personal, desarrollado con tecnologías web modernas para mostrar mis proyectos, habilidades y experiencia.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto está construido utilizando las siguientes herramientas y librerías:
 
-## Expanding the ESLint configuration
+-   **[React](https://react.dev/)**: Biblioteca de JavaScript para construir interfaces de usuario.
+-   **[Vite](https://vitejs.dev/)**: Entorno de desarrollo rápido y herramienta de construcción.
+-   **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript que añade tipado estático.
+-   **[Bootstrap](https://getbootstrap.com/)** & **[React-Bootstrap](https://react-bootstrap.github.io/)**: Framework CSS para diseño responsivo y componentes de UI.
+-   **[React Icons](https://react-icons.github.io/react-icons/)**: Colección de iconos populares.
+-   **[React Type Animation](https://www.npmjs.com/package/react-type-animation)**: Efectos de escritura animada.
+-   **[React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer)**: Para detectar cuando los elementos entran en el viewport.
+-   **[EmailJS](https://www.emailjs.com/)**: Para el envío de correos desde el formulario de contacto.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Estructura del Proyecto
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+El proyecto sigue una estructura estándar de React con Vite:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+portafolio/
+├── public/          # Archivos estáticos
+├── src/             # Código fuente
+│   ├── assets/      # Imágenes y recursos
+│   ├── components/  # Componentes de React (Header, Hero, About, Projects, Contact, Footer)
+│   ├── style/       # Estilos adicionales
+│   ├── App.tsx      # Componente principal
+│   └── main.tsx     # Punto de entrada
+├── index.html       # Archivo HTML principal
+├── package.json     # Dependencias y scripts
+└── tsconfig.json    # Configuración de TypeScript
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Instalación y Ejecución
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clonar el repositorio:**
+
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    cd portafolio
+    ```
+
+2.  **Instalar dependencias:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Ejecutar el servidor de desarrollo:**
+
+    ```bash
+    npm run dev
+    ```
+
+    La aplicación estará disponible en `http://localhost:5173` (o el puerto que indique la consola).
+
+4.  **Construir para producción:**
+
+    ```bash
+    npm run build
+    ```
+
+## ✨ Funcionalidades
+
+-   **Diseño Responsivo**: Adaptable a dispositivos móviles y de escritorio gracias a Bootstrap.
+-   **Navegación Suave**: Desplazamiento fluido entre las secciones.
+-   **Animaciones**: Texto animado y efectos visuales.
+-   **Formulario de Contacto**: Integración funcional para recibir mensajes.
+
