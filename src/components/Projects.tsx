@@ -3,8 +3,8 @@ import { Container, Card } from 'react-bootstrap';
 import FadeInSection from './FadeInSection';
 import { FiGithub, FiExternalLink, FiDownload } from 'react-icons/fi';
 import '../style/Projects.css';
-import diagrama from '../assets/spiderHome.jpg';
-import monopatines from '../assets/monopatines-electricos.jpg';
+import diagrama from '../assets/DiagramaServicios.jpg';
+import spiderHome from '../assets/spiderHome.jpg';
 import rattata from '../assets/rattata.png';
 import vitalifit from '../assets/vitalifit.png';
 
