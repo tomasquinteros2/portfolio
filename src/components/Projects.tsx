@@ -30,13 +30,13 @@ const projectData: Project[] = [
     technologies: ['Java Spring', 'Node.js', 'TypeScript', 'PostgreSQL', 'JWT', 'Docker']
   },
   {
-    title: 'Electric Scooter System',
-    description: 'Backend system with microservices architecture. Manages registration, maintenance, and billing for a scooter network, including paid pauses.',
-    imageUrl: monopatines,
-    projectUrl: '/TPE-ArqWeb-2024.pdf',
-    repoUrl: 'https://github.com/tomasquinteros2/Arquitecturas-WEB-Servicio-Monopatines',
-    technologies: ['Java Spring', 'Maven', 'JWT', 'Docker', 'MySQL'],
-    isPdf: true,
+  title: 'Web Interfaces & CSS Animations',
+  description: 'Frontend project focusing on CSS, animations, and responsive UI.',
+  imageUrl: spiderHome,
+  projectUrl: 'https://interfaces-jf98.vercel.app/',
+  repoUrl: 'https://github.com/tomasquinteros2/interfaces/tree/main/tp4',
+  technologies: ['HTML5', 'CSS3', 'Animations'],
+  isPdf: false,
   },
   {
     title: 'VitalifitSupps',
