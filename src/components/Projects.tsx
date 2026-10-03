@@ -3,7 +3,7 @@ import { Container, Card } from 'react-bootstrap';
 import FadeInSection from './FadeInSection';
 import { FiGithub, FiExternalLink, FiDownload } from 'react-icons/fi';
 import '../style/Projects.css';
-import diagrama from '../assets/DiagramaServicios.jpg';
+import diagrama from '../assets/spiderHome.jpeg';
 import monopatines from '../assets/monopatines-electricos.jpg';
 import rattata from '../assets/rattata.png';
 import vitalifit from '../assets/vitalifit.png';
@@ -30,13 +30,13 @@ const projectData: Project[] = [
     technologies: ['Java Spring', 'Node.js', 'TypeScript', 'PostgreSQL', 'JWT', 'Docker']
   },
   {
-  title: 'Web Interfaces & CSS Animations',
-  description: 'Frontend project focusing on CSS, animations, and responsive UI.',
-  imageUrl: spiderHome,
-  projectUrl: 'https://interfaces-jf98.vercel.app/',
-  repoUrl: 'https://github.com/tomasquinteros2/interfaces/tree/main/tp4',
-  technologies: ['HTML5', 'CSS3', 'Animations'],
-  isPdf: false,
+    title: 'Web Interfaces & CSS Animations',
+    description: 'Frontend project focusing on CSS, animations, and responsive UI.',
+    imageUrl: spiderHome,
+    projectUrl: 'https://interfaces-jf98.vercel.app/',
+    repoUrl: 'https://github.com/tomasquinteros2/interfaces/tree/main/tp4',
+    technologies: ['HTML5', 'CSS3', 'Animations'],
+    isPdf: false,
   },
   {
     title: 'VitalifitSupps',
